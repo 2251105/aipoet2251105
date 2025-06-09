@@ -2,8 +2,8 @@
 #pip install langchain-openai
 #pip install steramlit
 
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 
 from langchain_openai import ChatOpenAI
@@ -21,6 +21,5 @@ st.write("주제:" + subject)
 
 if st.button("작성"):
   with st.spinner("창작중..!")
-    result = chat_model.invoke(subject + "에 대한 시를 써줘")
-    st.write(result.content)
-    
+     result = chat_model.invoke(subject + "에 대한 시를 써줘")
+     st.write(result.content)
